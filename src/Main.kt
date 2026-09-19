@@ -1,14 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+ //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main()
 {
-    println("Give number 1")
-    var num1=readln().toFloat()
-    println("Give number 2")
-    var num2=readln().toFloat()
+   //object of the class
+   var daisy=Dog("jimmy","lab",1)
 
-    print("The Added answer is ${add(num1,num2)}")
+   println("Summary")
+   println("Name is ${daisy.name}")
+   println("Breed is ${daisy.breed}")
+   println("Age is ${daisy.age}")
+
+   println()
+   println("After one year")
+   println()
+
+   daisy.age=2 //reinilitiaze of the values in tha constructor
+   println("Name is ${daisy.name}")
+   println("Breed is ${daisy.breed}")
+   println("Age is ${daisy.age}")
 }
-fun add(num1: Float, num:Float):Float{
-    return (num1/num).toFloat()
-}
+
