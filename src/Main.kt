@@ -2,13 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main()
 {
-    println("Enter your name: ")
-    var CustomerName=readln()
-    println("Enter Number of Spoons of Sugar")
-    var Sugar=readln().toInt()
-    makeCoffee(CustomerName,Sugar)
-    }
-fun makeCoffee(name: String,Sugar:Int)
-{
-    println("The coffer is for $name with $Sugar Spoons of Sugar")
+    println("Give number 1")
+    var num1=readln().toFloat()
+    println("Give number 2")
+    var num2=readln().toFloat()
+
+    print("The Added answer is ${add(num1,num2)}")
+}
+fun add(num1: Float, num:Float):Float{
+    return (num1/num).toFloat()
 }
